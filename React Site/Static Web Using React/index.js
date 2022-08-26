@@ -87,6 +87,49 @@ function OwnCustomComponent(){
 ReactDOM.render(<OwnCustomComponent />, document.getElementById("hindiEnglishSeries"));
 
 
+// Mini Challengest - Parent Child Component
 
+function Header(){
+    return(
+        <header>
+            <nav>
+                <img src="./quiz2.png" alt="quiz2ParentChildComponent" height="100px" width="100px"></img>
+            </nav>
+       </header>
+    )
+}
+
+function HeadingOrderedListComponent(){
+    return(
+        <div>
+             <h1>Hello Parent Child Component</h1>
+             <ol>
+                <li>Parent Component</li>
+                <li>Child Component</li>
+                <li>Parent Child Component</li>
+             </ol>
+        </div>
+    )
+}
+
+function FooterComponent(){
+    return(
+        <footer>
+            <h5>copyright 2022 Click here to see the log.</h5>
+        </footer>
+    )
+}
+
+function ParentChildComponent(){
+    return(
+        <div>
+            <Header />
+            <HeadingOrderedListComponent />
+            <FooterComponent />
+        </div>
+    )
+}
+
+ReactDOM.render(<ParentChildComponent />, document.getElementById("parentChildComponent"));
 
 
