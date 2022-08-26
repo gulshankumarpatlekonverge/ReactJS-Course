@@ -1,7 +1,7 @@
 import logo from './React-icon.svg.png';
 import './App.css';
 import HeaderReact from "./Header";
-import MainReact from './MainBody';
+import MainReact from './Body';
 import FooterReact from './Footer'
 
 // function HeaderReact(){
