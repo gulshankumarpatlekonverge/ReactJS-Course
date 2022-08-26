@@ -21,3 +21,7 @@ Course from FreeCodeCamp and Scrimba
     React CDN: https://reactjs.org/docs/cdn-links.html
 
     React JSX CDN: https://reactjs.org/docs/add-react-to-a-website.html#quickly-try-jsx
+    
+    Vite+React: https://vitejs.dev/guide/
+    
+    React: https://reactjs.org/
