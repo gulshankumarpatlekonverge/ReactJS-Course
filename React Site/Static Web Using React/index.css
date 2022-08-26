@@ -2,3 +2,49 @@ html, body{
     margin: 0;
     padding: 10px;
 }
+
+.nav-item{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px lightblue;
+}
+
+.headerList{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+    display: flex;
+}
+
+.headerList > li {
+    padding: 10px;
+}
+
+/* .li-item{
+    display:inline;
+    margin: 10px; 
+} */
+
+.img-item{
+    height: 50px;
+    width: 50px; 
+}
+
+.div-item{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div-item > ul >li{
+    padding: 5px;
+
+}
+
+.footer-item{
+    background-color: gray;
+    font-size: 20px;
+    border: 1px solid gray;
+    text-align: center;
+}
