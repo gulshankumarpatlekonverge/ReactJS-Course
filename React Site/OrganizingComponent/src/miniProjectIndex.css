@@ -27,13 +27,16 @@ html, body{
 }
 
 div{
-    background-color: antiquewhite;
     height: 522px;
 }
 
 .body-div{
    margin-top: 50px;
    margin-left: 420px;
+   background-image: url("./sunset.jpg");
+   background-repeat: no-repeat;
+   background-position: right 50%;
+   /* background-attachment: fixed; */
 }
 
 footer{
@@ -42,8 +45,9 @@ footer{
     background-color: aquamarine;
 }
 
-.body-div > ul > li{
+.body-div > ul > li::marker{
     padding: 15px;
     font-size: 20px;
+    color: aqua;
 }
 
