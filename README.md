@@ -7,6 +7,14 @@ Course from FreeCodeCamp and Scrimba
 # Create React app using vite
 
     npm create vite@latest
+    cd vite@latest
+    # OR
+    npm create vite@latest my-project
+    cd my-project
+    
+    npm install
+    npm run dev
+
 
 # Useful Links
 
