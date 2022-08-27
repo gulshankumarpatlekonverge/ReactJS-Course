@@ -8,6 +8,25 @@ Course from FreeCodeCamp and Scrimba
 
     npm create vite@latest
 
+# React Site
+    1. CDN Practice
+        You will see practical implementation using CDN here for challenges and practice.
+
+    2. OraganizingComponenets
+        Here, there are few challenges and miniProject there for organizing the component.
+            We used npm here for implemenatation of code.
+                npx create-react-app my-app
+
+                cd my-app
+                npm start
+
+    3. Static Web Using React
+        Here, we covered some react implementation and challenges from scrimba.
+    
+    4. Solo Project
+        Solo project from scrimba using figma design. In this, made a Digital Bussiness Card. 
+
+
 # Useful Links
 
     React CDN: https://reactjs.org/docs/cdn-links.html
