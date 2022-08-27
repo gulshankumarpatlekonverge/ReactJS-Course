@@ -32,7 +32,12 @@ Course from FreeCodeCamp and Scrimba
         Here, we covered some react implementation and challenges from scrimba.
     
     4. Solo Project
-        Solo project from scrimba using figma design. In this, made a Digital Bussiness Card. 
+        Solo project from scrimba using figma design. In this, made a Digital Bussiness Card.
+            npm create vite@latest solo_project
+
+            cd solo_project
+            npm install
+            npm run dev 
 
 
 # Useful Links
