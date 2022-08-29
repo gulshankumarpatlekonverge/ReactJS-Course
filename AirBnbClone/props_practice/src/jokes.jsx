@@ -8,6 +8,9 @@ function JokesBox(props){
             {/* <h3 style={{display: props.setup ? "block" : "none"}}>Setup: {props.setup}</h3> */}
             {/* {props.setup && <h3>Setup: {props.setup}</h3>} */}
             <p>Punchline: {props.punchline}</p>
+            <p>Ratings: {props.ratings}</p>
+            {/* <span>UpVotes: {upVoteDownVote}</span>
+            <span>DownVotes: {upVoteDownVote[1]}</span> */}
         </div>
     )
 }
