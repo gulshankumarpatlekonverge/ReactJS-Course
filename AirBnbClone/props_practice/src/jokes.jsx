@@ -4,13 +4,18 @@ function JokesBox(props){
     console.log(props);
     return(
         <div className="div-joke">
-            <p>Setup: {props.setup}</p>
+            <h3>Setup: {props.setup}</h3>
+            {/* <h3 style={{display: props.setup ? "block" : "none"}}>Setup: {props.setup}</h3> */}
+            {/* {props.setup && <h3>Setup: {props.setup}</h3>} */}
             <p>Punchline: {props.punchline}</p>
         </div>
     )
 }
 
 export default JokesBox;
+
+
+// The above code on line number 8 and 9 are used to remove the null props value content.
 
 
 // Setup: I got my daughter a fridge for her birthday.

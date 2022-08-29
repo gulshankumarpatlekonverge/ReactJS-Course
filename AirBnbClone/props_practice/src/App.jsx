@@ -10,6 +10,11 @@ function App() {
       <div>
         <h1>Jokes Board</h1>
         <JokesBox 
+            // setup ="I got my daughter a fridge for her birthday."
+            punchline = "It’s hard to explain puns to kleptomaniacs because they always take things literally."
+        />
+        
+        <JokesBox 
             setup ="I got my daughter a fridge for her birthday."
             punchline = "I can't wait to see her face light up when she opens it."
         />
