@@ -95,24 +95,27 @@ body{
 }
 
 .card{
-  width: 590px;
-  height: 310px;
-  margin-top: 0;
-  margin-bottom: 100px;
-  display: flex;
+  width: 175px;
+  /* height: 250px; */
+  /* margin-top: 0;
+  margin-bottom: 100px; */
+ 
+  text-rendering: inherit;
 }
 
 .card-image{
-  height: 235px;
-  width: 276px;
+  height: 150pxpx;
+  width: 140px;
   border-radius: 15px;
   padding: 3px;
   margin-top: 0;
 }
 
 .card-rating{
+  display: flex;
   font-size: 20px;
   margin-top: 0;
+  align-items: center;
 }
 
 .card-rating > span{
