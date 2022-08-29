@@ -44,12 +44,12 @@ body{
 
 .img-logo-item{
   margin-top: 30px;
-  height: 25.35px;
+  height: 40.35px;
   width: 82.02px;
 }
 
 .header-item{
-  /* width: 590px; */
+  width: 590px;
   height: 70px;
   display: flex;
   box-shadow: 0px 3px gray;
@@ -57,8 +57,8 @@ body{
 
 .galary-item{
   margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  /* margin-right: 100px; */
   display: flex;
   height: 300px;
   width: 225px;
@@ -85,16 +85,52 @@ body{
 .headingOne-item{
   height: 40px;
   width: 347px;
+  margin-bottom: 16px;
 }
 
 .paragraph-headingOne-item{
   height: 56px;
   width: 320px;
+  margin-top: 0;
 }
 
-.body-div-content{
+.card{
   width: 590px;
   height: 310px;
-  background-color: aqua;
+  margin-top: 0;
+  margin-bottom: 100px;
+  display: flex;
 }
 
+.card-image{
+  height: 235px;
+  width: 276px;
+  border-radius: 15px;
+  padding: 3px;
+  margin-top: 0;
+}
+
+.card-rating{
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.card-rating > span{
+  padding: 2px;
+}
+
+.star-card-image{
+  height: 16px;
+  width: 16px;
+  padding: 2px;
+}
+
+.card-content{
+  font-size: 16px;
+
+}
+
+.card-price{
+  font-weight: bold;
+  font-size: 14px;
+}
