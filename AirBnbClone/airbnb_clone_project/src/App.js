@@ -13,8 +13,11 @@ function App() {
   const cardContent = cardContentData.map(value => {
       return <BodyContent 
         key = {value.id}
-        img = {image1}
-        value = {value}
+        image = {image1}
+        // value = {value}
+        // spreading object as props
+        {...value}
+        
         // stats = {value.stats}
         // location = {value.location}
         // title = {value.title}
