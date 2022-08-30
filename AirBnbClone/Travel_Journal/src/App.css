@@ -1,6 +1,70 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.nav-bar-div{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(236, 242, 242);
+  border: 2px solid grey;
+  color: black;
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+
+.nav-bar-heading{
+  text-align: center;
+  margin: 10px;
+}
+.div-image-logo{
+  height: 40px;
+  padding: 5px;
+  margin-left: 550px;
+}
+
+.main-div{
+  height: 100%;
+  width: 85%;
+  padding: 25px;
+  border: 2px solid lightblue;
+  margin: 10px 100px 10px 100px; 
+}
+
+.card{
+  width: 100%;
+  height: 252px;
+  display: flex ;
+  text-align: justify;
+  border: 2px solid #90B77D;
+  padding: 3px;
+}
+
+.card-image{
+  width: 30%;
+  margin: 0;
+  border-radius: 10px;
+}
+.card-content-div{
+  padding: 5px;
+  margin: 0px;
+}
+
+.paragraph-item{
+  padding-right: 5px;
+  margin: 0;
+  text-justify: distribute-all-lines;
+}
+
+.title-heading-div{
+  margin-top: 10px;
+}
+
+.description-paragraph-item{
+  font-size: 14px;
+
+  object-fit: cover;
 }
