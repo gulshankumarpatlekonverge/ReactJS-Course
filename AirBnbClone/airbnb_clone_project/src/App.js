@@ -14,11 +14,12 @@ function App() {
       return <BodyContent 
         key = {value.id}
         img = {image1}
-        stats = {value.stats}
-        location = {value.location}
-        title = {value.title}
-        price= {value.price}   
-        openSpots= {value.openSpots}  
+        value = {value}
+        // stats = {value.stats}
+        // location = {value.location}
+        // title = {value.title}
+        // price= {value.price}   
+        // openSpots= {value.openSpots}  
       />
     })
   return (
