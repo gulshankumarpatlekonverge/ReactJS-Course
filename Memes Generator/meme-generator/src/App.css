@@ -49,7 +49,12 @@
     margin-right: auto;
     border-radius: 10px;
     text-indent: 5px;
+    padding-left: 100px;
 }
+
+/* .input-box-margin{
+  margin-right: 100px;
+} */
 
 .meme-button{
   height: 40px;
@@ -95,3 +100,60 @@ main {
   border: none;
   cursor: pointer;
 } */
+
+
+
+/* challengess/task 1 css - Event Listener */
+
+
+.challenge1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.challenge1-container > img {
+  width: 100%;
+  border-radius: 10px;
+  transition: filter .1s ease-in-out;
+}
+
+.challenge1-container > img:hover {
+  filter: brightness(50%);
+}
+
+.challenge1-container > button {
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid lightgray;
+  background-color: rgb(5, 128, 21);
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.3rem;
+}
+
+ /* Challenge 2 */
+
+
+.challenge2-button {
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem;
+  color: white;
+  border: 2px solid rgb(148, 97, 214);
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  margin-bottom: 20px;
+}
+
+.challenge2-button:hover {
+  background-color: #efdf08;
+  color: #e10b0b;
+}
+
+.challenge2-button:focus {
+  outline: 0;
+}
