@@ -8,11 +8,11 @@ import './App.css'
 function App() {
   return (
     <>
-      {/* <HeaderComponent />
-      <InputboxButtonComponent /> */}
+      <HeaderComponent />
+      <InputboxButtonComponent />
 
       {/* challenges/tasks */}
-      <EventListenerComponent />
+      {/* <EventListenerComponent /> */}
     </>
   )
 }
