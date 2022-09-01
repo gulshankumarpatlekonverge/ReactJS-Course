@@ -1,3 +1,5 @@
+/* NavBar CSS */
+
 .nav-bar{
   display: flex;
   margin: 0;
@@ -9,16 +11,87 @@
 }
 
 .meme-icon-img{
-  height: 50px;
+  height: 100%;
   width: 50px;
   padding: 10px;
   border: 3px solid lawngreen;
+  margin-right: 20px;
 }
 
 .h2-anchor-tag{
   color: white;
-  margin-left: 890px;
+  margin-right: auto;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
 }
+
+/* InputBox and Button CSS */
+
+.main-div{
+  margin: 30px;
+  /* align-content: center; */
+}
+
+.input-box-div{
+  width: 100%;
+  display: flex;
+}
+
+.input-box{
+    height: 35px;
+    width: 350px;
+    padding: 4px;
+    color: black;
+    font-size: 16px;
+    border: 3px solid #D5D4D8;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-indent: 5px;
+}
+
+.meme-button{
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: purple;
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* Using Form and Grid View */
+
+/* 
+main {
+  padding: 36px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+} */
