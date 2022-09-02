@@ -4,6 +4,7 @@ import InputboxButtonComponent from './body/inputboxButton';
 // challenges/tasks
 import EventListenerComponent from './challenges/eventListener';
 import UseStateComponent from './challenges/useState';
+import TernaryOperatorComponenet from './challenges/ternaryOperator';
 
 import './App.css'
 
@@ -15,7 +16,8 @@ function App() {
 
       {/* challenges/tasks */}
       {/* <EventListenerComponent /> */}
-      <UseStateComponent />
+      {/* <UseStateComponent /> */}
+      <TernaryOperatorComponenet />
     </>
   )
 }
