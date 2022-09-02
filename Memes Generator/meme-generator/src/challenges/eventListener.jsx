@@ -1,5 +1,7 @@
 // this is kind  of challenge to understand event listeners
 
+import React from "react";
+
 // https://reactjs.org/docs/events.html#mouse-events
 
 function EventListenerComponent(){
@@ -11,22 +13,22 @@ function EventListenerComponent(){
     function handleImageClick(){
         console.log("Image MouseOver or Clicked!!")
     }
+    
     // Challenge 2
-    const thingsArray = ["Thing 1", "Thing 2"];
+    const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"]);
 
     let thingsArrayData;
 
     thingsArrayData = thingsArray.map(value => 
         <p key = {value}>{value}</p> 
     )
-    function challenge2(){
-        let arrayLength = thingsArray.length + 1;
-        thingsArray.push("Thing "+ arrayLength);
-        console.log(thingsArray);
-    }
 
-   
-   
+    function challenge2(){
+        setThingsArray(function (preValue){
+            let arrayLength =  thingsArray.length + 1;
+            return [...preValue, "Things " + arrayLength]
+        })
+    }
 
     return(
         <div>
