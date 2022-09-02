@@ -17,9 +17,9 @@ function App() {
 
       {/* challenges/tasks */}
       {/* <EventListenerComponent /> */}
-      {/* <UseStateComponent /> */}
+      <UseStateComponent />
       {/* <TernaryOperatorComponenet /> */}
-      <ComplexStateObject />
+      {/* <ComplexStateObject /> */}
     </>
   )
 }

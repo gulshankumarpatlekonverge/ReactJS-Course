@@ -1,5 +1,7 @@
 import React from "react";
 
+import UseStateCountComponent from "./useStateCountComponent";
+
 function UseStateComponent(){
 
     // Challenge 3
@@ -49,9 +51,14 @@ function UseStateComponent(){
             {/* Challenge 4 - counter practice */}
             <div className="counter">
             <button className="counter--minus" onClick={minus}>–</button>
-            <div className="counter--count">
+            {/* <div className="counter--count">
                 <h1>{count}</h1>
-            </div>
+            </div> */}
+
+            <UseStateCountComponent 
+                count = {count}
+            />
+
             <button className="counter--plus" onClick={add}>+</button>
         </div>
         </div>
