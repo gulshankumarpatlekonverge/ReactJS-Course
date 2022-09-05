@@ -8,9 +8,20 @@ import TernaryOperatorComponenet from './challenges/ternaryOperator';
 import ComplexStateObject from './challenges/complexStateObject';
 import BoxesPart from './challenges/Boxes Challenges/boxesPart';
 
+import JokesData from './challenges/Jokes/JokesData';
+import JokesComponent from './challenges/Jokes/jokesComponent'
 import './App.css'
 
 function App() {
+  const jokeElements = JokesData.map(joke => {
+    return (
+        <JokesComponent 
+            key={joke.id}
+            setup={joke.setup} 
+            punchline={joke.punchline} 
+        />
+    )
+})
   return (
     <>
       {/* <HeaderComponent />
@@ -22,6 +33,8 @@ function App() {
       {/* <TernaryOperatorComponenet /> */}
       {/* <ComplexStateObject /> */}
       <BoxesPart />
+      
+      {jokeElements}
     </>
   )
 }
