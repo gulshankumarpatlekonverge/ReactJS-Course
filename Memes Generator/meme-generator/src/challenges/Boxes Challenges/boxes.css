@@ -6,7 +6,6 @@ body{
 .boxes{
     margin: 30px 30px 30px 30px;
     border: 2px solid red;
-    background-color: transparent;
     height: 35px;
     width: 70px;
 }

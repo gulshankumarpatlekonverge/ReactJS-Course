@@ -8,7 +8,6 @@ function BoxesPartOne(){
 
     let data = boxState.map(value => {
         return(
-        //    value.on ? <div key={value.id} className="boxes"></div> : <div  key={value.id} className="boxesNone"></div>
         <BoxComponent 
             key = {value.id}
             on = {value.on}

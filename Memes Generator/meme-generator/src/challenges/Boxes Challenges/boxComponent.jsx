@@ -1,14 +1,19 @@
 import React from "react";
+import { useState } from "react";
 
 function BoxComponent(props){
+    const [onState, setOnState] = useState(props.on)
+    
     const styles = {
-        backgroundColor: props.on ? "#222222" : "none"
+        backgroundColor: onState ? "#222222" : "transparent"
     }
-    return(
-        //my solution
-        // props.on ? <div key={props.id} className="boxes"></div> : <div  key={props.id} className="boxesNone"></div>
-
-        <div style={styles} className="boxes" key={props.id}></div>
+    
+    function toggle() {
+        setOnState(prevOn => !prevOn)
+    }
+    
+    return (
+        <div style={styles} className="boxes" onClick={toggle}></div>
     )
 }
 
