@@ -4,6 +4,7 @@ import './complexStateObject.css';
 import starEmpty from './images/star-empty.png';
 import starFilled from './images/star-filled.jpg';
 import user from './images/user.png';
+import StarIconComponent from './startIconComponent';
 
 function ComplexStateObject(){
     const [contact, setContact] = React.useState({
@@ -34,10 +35,15 @@ function ComplexStateObject(){
             <article className="card">
                 <img src={user} className="card--image" />
                 <div className="card--info">
-                    <img 
+                    {/* <img 
                         src={starIcon} 
                         className="card--favorite"
                         onClick={toggleFavorite}
+                    /> */}
+                    <StarIconComponent 
+                        starIcon = {starIcon}
+                        // isFavorite = {contact.isFavorite}
+                        toggleFavorite ={toggleFavorite}
                     />
                     <h2 className="card--name">
                         {contact.firstName + " " + contact.lastName}

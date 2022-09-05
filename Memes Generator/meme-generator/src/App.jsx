@@ -6,6 +6,7 @@ import EventListenerComponent from './challenges/eventListener';
 import UseStateComponent from './challenges/useState';
 import TernaryOperatorComponenet from './challenges/ternaryOperator';
 import ComplexStateObject from './challenges/complexStateObject';
+import BoxesPart from './challenges/Boxes Challenges/boxesPart';
 
 import './App.css'
 
@@ -17,9 +18,10 @@ function App() {
 
       {/* challenges/tasks */}
       {/* <EventListenerComponent /> */}
-      <UseStateComponent />
+      {/* <UseStateComponent /> */}
       {/* <TernaryOperatorComponenet /> */}
-      {/* <ComplexStateObject /> */}
+      <ComplexStateObject />
+      <BoxesPart />
     </>
   )
 }
