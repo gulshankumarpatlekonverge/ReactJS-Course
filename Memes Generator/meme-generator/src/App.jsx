@@ -9,7 +9,9 @@ import ComplexStateObject from './challenges/complexStateObject';
 import BoxesPart from './challenges/Boxes Challenges/boxesPart';
 
 import JokesData from './challenges/Jokes/JokesData';
-import JokesComponent from './challenges/Jokes/jokesComponent'
+import JokesComponent from './challenges/Jokes/jokesComponent';
+
+import FormComponent from './challenges/Forms/formComponent';
 import './App.css'
 
 function App() {
@@ -32,9 +34,11 @@ function App() {
       {/* <UseStateComponent /> */}
       {/* <TernaryOperatorComponenet /> */}
       {/* <ComplexStateObject /> */}
-      <BoxesPart />
+      {/* <BoxesPart />
       
-      {jokeElements}
+      {jokeElements} */}
+
+      <FormComponent />
     </>
   )
 }
