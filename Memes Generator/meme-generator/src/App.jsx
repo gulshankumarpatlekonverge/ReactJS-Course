@@ -20,7 +20,7 @@ function App() {
       {/* <EventListenerComponent /> */}
       {/* <UseStateComponent /> */}
       {/* <TernaryOperatorComponenet /> */}
-      <ComplexStateObject />
+      {/* <ComplexStateObject /> */}
       <BoxesPart />
     </>
   )
