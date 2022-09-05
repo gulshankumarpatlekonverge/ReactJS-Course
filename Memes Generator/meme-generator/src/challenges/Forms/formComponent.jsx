@@ -1,17 +1,21 @@
 import React from "react";
 
 function FormComponent(){
-    const [firstName, setFirstName] = React.useState("");
-    const [lastName, setLastName] = React.useState("");
-    console.log(firstName)
-    console.log(lastName)
-    function handleFirstNameChange(event){
-       setFirstName(event.target.value);
+    const [formData, setFormData] = React.useState({
+        firstName: "",
+        lastName: "",
+        email:  ""
+    });
+   
+    function handleChange(event){
+       console.log(event.target.value);
+       setFormData(prevFormData => {
+        return{
+            ...prevFormData,
+            [event.target.name]: event.target.value
+        }
+       })
     }
-
-    function handleLastNameChange(event){
-        setLastName(event.target.value);
-     }
 
     return(
         <form>
@@ -19,13 +23,22 @@ function FormComponent(){
         <input 
             type = "text"    
             placeholder="Enter First Name"
-            onChange={handleFirstNameChange}
+            onChange={handleChange}
+            name= "firstName"
         />
 
         <input 
             type = "text"    
-            placeholder="Enter Last Name"
-            onChange={handleLastNameChange}
+            placeholder="Enter LastName"
+            onChange={handleChange}
+            name = "lastName"
+        />
+
+        <input 
+            type = "email"    
+            placeholder="Enter Email Address"
+            onChange={handleChange}
+            name = "email"
         />
 
         </form>
