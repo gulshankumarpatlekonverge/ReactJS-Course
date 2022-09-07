@@ -12,6 +12,7 @@ import JokesData from './challenges/Jokes/JokesData';
 import JokesComponent from './challenges/Jokes/jokesComponent';
 
 import FormComponent from './challenges/Forms/formComponent';
+import SignUpForm from './challenges/Forms/signUpForm';
 import './App.css'
 
 function App() {
@@ -37,8 +38,8 @@ function App() {
       {/* <BoxesPart />
       
       {jokeElements} */}
-
-      <FormComponent />
+      {/* <FormComponent /> */}
+      <SignUpForm />
     </>
   )
 }
