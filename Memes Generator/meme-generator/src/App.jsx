@@ -13,6 +13,8 @@ import JokesComponent from './challenges/Jokes/jokesComponent';
 
 import FormComponent from './challenges/Forms/formComponent';
 import SignUpForm from './challenges/Forms/signUpForm';
+
+import MakingApiCalls from './challenges/Forms/API Calls/apiCalls';
 import './App.css'
 
 function App() {
@@ -27,8 +29,8 @@ function App() {
 })
   return (
     <>
-      <HeaderComponent />
-      <InputboxButtonComponent />
+      {/* <HeaderComponent />
+      <InputboxButtonComponent /> */}
 
       {/* challenges/tasks */}
       {/* <EventListenerComponent /> */}
@@ -40,6 +42,8 @@ function App() {
       {jokeElements} */}
       {/* <FormComponent /> */}
       {/* <SignUpForm /> */}
+
+      <MakingApiCalls />
     </>
   )
 }
