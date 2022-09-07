@@ -5,9 +5,10 @@
 body {
     margin: 0;
     padding: 20px;
+    margin-left: 200px;
 }
 
-input, textarea {
+input[type="text"], input[type="email"] {
     margin-bottom: 15px;
     height: 30px;
     text-indent: 10px;
@@ -16,7 +17,15 @@ input, textarea {
     display: block;
 }
 
-.comments-textarea{
-    height: 100px;   
+textarea {
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: block;
+    
+}
+
+input[type="checkbox"] {
+    margin-right: 0.75rem;
 }
 
