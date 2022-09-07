@@ -29,8 +29,8 @@ function App() {
 })
   return (
     <>
-      {/* <HeaderComponent />
-      <InputboxButtonComponent /> */}
+      <HeaderComponent />
+      <InputboxButtonComponent />
 
       {/* challenges/tasks */}
       {/* <EventListenerComponent /> */}
@@ -42,8 +42,8 @@ function App() {
       {jokeElements} */}
       {/* <FormComponent /> */}
       {/* <SignUpForm /> */}
-
-      <MakingApiCalls />
+{/* 
+      <MakingApiCalls /> */}
     </>
   )
 }

@@ -10,14 +10,23 @@ function InputboxButtonComponent(){
         randomImage: "http://i.imgflip.com/1bij.jpg"
     });
 
-    const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+    const [allMemes, setAllMemes] = React.useState([]);
 
-    // const [memeImage, setMemeImage] = React.useState("");
+    React.useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes")
+        .then(res => res.json())
+        .then(data => setAllMemes(data.data.memes))
 
+        // Using async await :- MAKE FUNCTION AS ASYNC and put await front of value
+        // const res = await fetch("https://api.imgflip.com/get_memes");
+        // const data = await res.json();
+        // setAllMemes(data.data.memes);
+
+    }, [])
+    
     function getRandomImage(){
-        const memesArray = allMemeImages.data.memes;
-        const randomNumber = Math.floor(Math.random() * memesArray.length);
-        let imageUrl = memesArray[randomNumber].url;
+        const randomNumber = Math.floor(Math.random() * allMemes.length);
+        let imageUrl = allMemes[randomNumber].url;
         setMeme(prevImage => ({
             ...prevImage,
             randomImage: imageUrl
