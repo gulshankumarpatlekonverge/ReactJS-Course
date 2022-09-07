@@ -4,7 +4,7 @@ import './windowTracker.css';
 import WindowTrackerShow from "./windowTrackerShow";
 
 function WindowTracker(){
-    const [show, setShow] = React.useState(false);
+    const [show, setShow] = React.useState(true);
 
     function onClickButton(){
         setShow(preShow => !preShow)
