@@ -34,18 +34,18 @@ function App() {
       <InputboxButtonComponent />
 
       {/* challenges/tasks */}
-      {/* <EventListenerComponent /> */}
-      {/* <UseStateComponent /> */}
-      {/* <TernaryOperatorComponenet /> */}
-      {/* <ComplexStateObject /> */}
-      {/* <BoxesPart />
+      <EventListenerComponent />
+      <UseStateComponent />
+      <TernaryOperatorComponenet />
+      <ComplexStateObject />
+      <BoxesPart />
       
-      {jokeElements} */}
-      {/* <FormComponent /> */}
-      {/* <SignUpForm /> */}
+      {jokeElements}
+      <FormComponent />
+      <SignUpForm />
      
-       {/* <MakingApiCalls /> */}
-       {/* <WindowTracker /> */}
+       <MakingApiCalls />
+       <WindowTracker />
     </>
   )
 }
