@@ -30,9 +30,6 @@ function InputboxButtonComponent(){
             setAllMemes(data.data.memes);
         }
         getMemes();
-        return 
-
-
     }, [])
     
     function getRandomImage(){
