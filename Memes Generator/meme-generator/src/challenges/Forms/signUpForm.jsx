@@ -3,9 +3,9 @@ import './signUpForm.css'
 
 function SignUpForm(){
     const [loginData, setLoginData] = useState({
-        email: "email",
-        password: "password",
-        re_password: "password",
+        email: "",
+        password: "",
+        re_password: "",
         okayToMail: true
     });
 
@@ -23,8 +23,19 @@ function SignUpForm(){
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(loginData);
+        
+        if(loginData.password === loginData.re_password){
+            console.log("Successfully signed up");
+        } else{
+            console.log("Unfortunately Passwords do not match!");
+            return
+        }
 
+        if(loginData.okayToMail){
+            console.log("Thanks for signing up for our newsletter!");
+        }
+        
+        console.log(loginData);
     }
     return(
         <div className="form-container">
@@ -49,8 +60,8 @@ function SignUpForm(){
                     type="password" 
                     placeholder="Confirm password"
                     className="form--input"
-                    name="password"
-                    value={loginData.password}
+                    name="re_password"
+                    value={loginData.re_password}
                     onChange={handleChangeSignUpForm}
                 />
                 
@@ -59,7 +70,7 @@ function SignUpForm(){
                         id="okayToEmail"
                         type="checkbox"
                         name="okayToMail"
-                        value={loginData.okayToMail}
+                        checked={loginData.okayToMail}
                         onChange={handleChangeSignUpForm}
                     />
                     <label htmlFor="okayToEmail">I want to join the newsletter</label>
