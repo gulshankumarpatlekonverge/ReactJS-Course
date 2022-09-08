@@ -1,6 +1,8 @@
 import React from "react";
 import Die from "./Die";
 import './TenziesApp.css';
+import { nanoid } from "nanoid";
+import Confetti from 'react-confetti';
 
 export default function TenziesApp(){
     const [dice, setDice] = React.useState(allNewDice())
@@ -16,18 +18,17 @@ export default function TenziesApp(){
     }, [dice])
     
     function randomDieValue() {
-        return Math.ceil(Math.random() * 6)
+        return {
+            value: Math.ceil(Math.random() * 6),
+            held: false,
+            id: nanoid()
+        }
     }
 
     function allNewDice() {
         const newArray = []
         for(let i = 0; i < 10; i++) {
-            const newDie = {
-                value: randomDieValue(),
-                held: false,
-                id: i + 1
-            }
-            newArray.push(newDie)
+            newArray.push(randomDieValue())
         }
         return newArray
     }
@@ -37,7 +38,7 @@ export default function TenziesApp(){
             setDice((oldDice) => oldDice.map((die, i) =>
                 die.held ? 
                     die : 
-                    { value: randomDieValue(), held: false, id: i + 1 }
+                    randomDieValue()
             ))
         } else {
             setDice(allNewDice())
