@@ -39,6 +39,25 @@ Course from FreeCodeCamp and Scrimba
             npm install
             npm run dev 
 
+# AirBnB Clone Application
+    Here, I learned and adopted good hands on props in React. During the practice and implementating AirBnB clone, I came across multiple handon using props and rendering multiple componets in the same application.
+
+    1. Solo Project: Travel Jouranal
+        Did the project called travel jouranal using the props implementation.
+
+# Memes Generator 
+    Here, I have learned how to implement props, conditional rendering, React Forms, Props and State, useEffect and useState.
+
+# Notes and Tenxies Game Practice
+
+        1. Static Web Using React
+            Implementated Dark and Light Effect using props.
+        
+        2. Notes Application
+            Implemtation using useState, useEffect and localStorage to save the data.
+
+        3. Tenzies Game Application
+            Created the game application using react components and hooks.
 
 # Useful Links
 
